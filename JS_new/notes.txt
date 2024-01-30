@@ -1,0 +1,10 @@
+void mtd, confirm mtd, window.print mtd, prompt mtd 
+page redirecting : windows.location ="URL"
+Aggregation − the capability to store one object inside another object.
+
+ constructor methods are Object(), Array(), and Date(). 
+ These constructors are built-in JavaScript functions.
+
+ There are 3 ways to create objects, array
+
+ date object can be used to get year, month and day. 

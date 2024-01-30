@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js4.html"></script>
+
+</head>
+<body>
+<script>
+    function writecookies(){
+        if(document.getElementById("cust").value ==""){
+            document.getElementById("cust").focus();
+            alert("enter cookies ! ");
+            return;
+        }
+
+       let cookievalue = document.getElementById("cust").value;
+        document.write("name of cookies : "+cookievalue);
+    }
+
+    function readcookies(){
+        document.write("after getting "+cookievalue);
+        cookiearray = cookievalue.split(';');
+               
+    }
+    
+</script>
+
+<label>Name : </label><input type = "text" id = "cust"/>
+<input type="button" value="cookies" onclick="writecookies();">
+
+<p> click the following button and see the result:</p>
+    <input type="button" value=" get cookies" onclick="readcookies();">
+
+
+</body>
+</html>

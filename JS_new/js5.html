@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        //create object in JS using 3 diff mtds
+        // 1] using literal
+        var myobj ={
+            name:"divya", age:"21"
+        };
+        document.write("information : "+myobj.name +"<br>");
+
+        //2 using new keyword
+        var myobj2 = new Object();
+        myobj2.name = "Neha";
+        myobj2.age = 23;
+        document.write("information 2: "+myobj2.name+"  " +myobj2.age+"<br>");
+
+        //3]By using an Object constructor
+    {    function funcname(id, name){
+            this.id=id;
+            this.name=name;
+        
+            this.funccng=funccng;  
+        function funccng(cngname){
+            this.name=cngname;   
+        }
+    }
+      var e = new funcname(2152188, "divya");
+        document.write(e.id+ " "+e.name+"<br>");
+        e.funccng("rani");
+        document.write(e.id+ " "+e.name+"<br>");}
+
+        //create Number Object
+        var a =10;
+        var b = new Number(20);      
+        var c = Number.MAX_VALUE;
+        var d = Number.MIN_VALUE;
+       
+        document.write(a + " "+ b +" max value:  " +c+" min value "+d+"<br>");
+
+        //create array constructor 
+        var arr = new Array("div", "nik");
+        document.write(arr[0]);
+
+        var date = new Date();
+        var day=date.getDay();
+        var month = date.getMonth();
+        var year = date.getFullYear();
+        document.write("<br> date is : "+date+" "+day +"/ "+month+"/ "+year);
+
+        document.getElementById('p1').innerHTML=Math.sqrt(17);  
+        
+        var stringname=new String("<br> hello javascript string"); 
+        document.write(stringname);  
+
+   
+</script>  
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fun(){
+            alert("worning ")
+            document.write("this is worning ")
+        }
+       {
+        function func(){
+            var ver1 = confirm("want to contine");
+            if(ver1 == true){
+                document.write("continer ");
+                return true;
+            }
+            else{
+                document.write("not conti ");
+                return false;
+            }
+        }
+       }
+       {
+        function fun1(){
+            var var2 = prompt("enter your name :", "name is here")
+            document.write("You have entered : " + var2+"<br/>");
+            document.write("You have entered : " + var2 );
+
+        }
+       }
+       {
+        function fun2(){
+            window.location="https://www.google.com";
+        }
+
+       }
+    </script>
+
+     <p> click the following button and see the result:</p>
+     <input type = "button" onclick="fun()" value = "Call Function 2">
+     <a href="  javascript:void(alert('heloo divs' ))">click</a>
+     <input type="button" value="print" onclick="window.print()">
+
+     <input type="button" value="click to confirm" onclick="func()"><br>
+     <input type="button" value="click to prompt" onclick="fun1()"><br>
+     <input type="button" value="click to redirect" onclick="fun2()"><br>
+
+</body>
+</html>

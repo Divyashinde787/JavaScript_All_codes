@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function mainfun()
+        {
+            if(document.getElementById("name" && "email" && "x").value==""){
+                alert("please complete form");
+                return true;
+            }
+            else{
+                document.write("<h1>Your Data Save Sucessfully!</h1>")
+            }
+
+        }     
+
+function functionradio(){
+            var var1= " 12th marks: <input type='number' name='12th marks'><br>"
+            ;
+            document.getElementById("p1").innerHTML=var1;
+        }
+
+        function functionradio2(){
+            var var1= " diploma marks: <input type='number' name='diploma'><br>";
+            document.getElementById("p2").innerHTML=var1;
+        }
+
+
+
+    </script>
+    <form action="">
+        Name: <input type="text" name="name" id="name"><br><br>
+        email: <input type="text" name="email" id="email"><br>
+        <h4> education : </h4>
+        10th marks: <input type="number" name="10th marks" id="x"><br>
+
+        XII: <input type="radio" name="12th" value="12th" id="xii" onclick="functionradio()">
+       
+
+        Deploma: <input type="radio" name="diploma" value="diploma"onclick="functionradio2()">
+<br>
+       
+       
+
+        <p id="p1"></p>
+        <p id="p2"></p>
+
+
+        <input type="button" value="submit" onclick="mainfun()">
+    </form>
+
+    
+
+</body>
+</html>

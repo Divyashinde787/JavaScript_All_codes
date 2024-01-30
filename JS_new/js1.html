@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="myjs.js"></script> -->
+    <title>Document</title>
+    <script>
+        function myfun()
+        {
+        if(document.getElementById("name").value=="")
+        {
+            alert("enter name");
+            document.getElementById('name').focus();
+        }
+        if(document.getElementById("dob" && "no" &&  "email").value==""){
+            alert("enter required field");
+        }
+    }
+    console.log("Hello JavaScript");
+    document.write("hello");
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Employee Registration Form</h1>
+
+        <label for="">FULL NAME: </label><input type="text" id="name" name="name"><br><br>
+        <label for="">DOB: </label><input type="date" name="dob" id="dob"><br><br>
+        <label for="">MOBILE NUMBER: </label><input type="number" placeholder="enter number" name="no" id="no"><br><br>
+        <label for="">EMAIL ID: </label><input type="email" id="email" name="email"><br><br>
+        <label for="">ADDRESS: </label><textarea name="txarea" id="txarea"></textarea><br><br>
+        <label for="" >COURSE: </label>
+        <select name="course" id="course">
+            <option>java</option>
+            <option>reactJS</option>
+            <option>NodeJS</option>
+        </select> <br><br>
+
+        <label>APPWAR YEAR: </label>
+        <select name="" id="">
+            <option value="">Select</option>
+            <option value="">2021</option>
+            <option value="">2022</option>
+            <option value="">2023</option>
+            <option value="">2024</option>
+        </select><br><br>
+    
+        <label >LAST SEM MARKSHEET % : </label><input type="number" name="mark" id="mark"><br><br>
+        <label >UPLOAD MARKSHEET : </label><input type="file" name="file" id="file"><br><br>
+        <label >lANGUAGES : </label><input type="checkbox" >English<br>
+        <input type="checkbox">Hindi<br><br>
+    
+        <label >PASSOWRD : </label><input type="password" name="" id=""><br><br>
+        <label >CONFIRM PASSWORD : </label><input type="password" name="" id=""><br><br>
+        <input type="submit" name="submit" id="submit" onclick="myfun()"><br>
+        <button  type="submit" value="Submit" onclick="myfun()">Submit</button>
+       
+        <input type="reset"name="reset" id="reset"><br><br> 
+    </form>
+    </div>
+</body>
+</html>

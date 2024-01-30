@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Document</title>
+    <script src="myjs.js"></script>
+</head>
+<body>
+    <h1>addition</h1>
+    <p id="demo1"></p>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="newi"></p>
+    <p id="test"></p>
+    <button  type="submit" value="Submit" onclick="myfun()">Submit</button>
+    <script>
+    let x=7, y=9,z=0;
+    z=x+y;
+    document.getElementById("demo").innerHTML="value of z is "+z;
+
+   
+    const arrays = [1, 2,3 ,4 ,5];
+    arrays[2] = 60;
+    arrays.push(99);
+    document.getElementById("demo2").innerHTML=arrays;
+
+    const obj ={name:"divya", model:"bmw", year:"2022"};
+  
+    document.getElementById("newi").innerHTML=obj.model;
+
+    let a=5,b=5,c=9;
+    document.getElementById("test").innerHTML=(a==b)|| (b==c);
+    // if(a==b){
+    //     document.write("true");
+    // }
+    // else{
+    //     document.write("false");
+    // }
+
+    let count =1;
+    while(count<=10){
+      document.write(" true : "+count+"<br>");
+      count++;
+    }
+{
+      var Property;
+            document.write("Navigator Object Properties<br /> ");        
+            for (Property in navigator) {
+               document.write(Property);
+               document.write("<br />");
+            }
+    }
+
+    {
+      for(var i = 0; i<5; i++){
+        document.write("outerloop : "+ i +"<br/>")
+
+        for (var j = 0; j < 5; j++) {
+                  document.write("Innerloop: " + j + " <br />");
+               }
+      }
+    }
+    {
+      function fun1(a, b){
+        var c=a+b;
+        return c;
+      }
+      function fun2(){
+        var r;
+        r = fun1(5, 8);
+        document.write(r);
+      }
+
+    } 
+    {
+    function over() {
+               document.write ("Mouse Over");
+            }            
+            function out() {
+               document.write ("Mouse Out");
+            } 
+          }
+
+   </script>
+   <h1>hello</h1>
+   <div onmouseover = "over()" onmouseout = "out()"></div>
+    <form>
+      <input type = "button" onclick = "fun2()" value = "Call Function">
+      <button onclick="this.innerHTML=Date()">click here</button>
+
+    
+   </form> 
+
+
+    
+</body>
+</html>
